@@ -1,0 +1,64 @@
+
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Lalezar';
+}
+
+.start-page {
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/©Hellofoto_IBNL_5_381_44.jpg);
+
+  background-size: 400%;
+
+  background-position: 65% 180%;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+
+  ul {
+
+    display: none;
+    & li a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+
+  .logo img {
+    width: 3rem;
+  }
+
+
+  .title {
+
+    padding-left: 1rem;
+    padding-top: 50%;
+
+    h1 {
+      width: 10rem;
+      margin-bottom: 0;
+      margin-top: 0;
+      line-height: 1;
+      letter-spacing: 0.1rem;
+      font-weight: 200;
+
+      border-bottom: 0.5rem solid transparent;
+      border-image: url(../images/linebar.png) 55 round;
+      border-width: 0.24rem;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    img {
+      width: 1rem;
+    }
+  }
+}
