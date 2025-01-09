@@ -71,13 +71,11 @@ button {
 
 .start-page {
   width: 100vw;
- background-image: url(../images/©Hellofoto_IBNL_5_381_24.jpg);
- filter: brightness();
-  background-size: 500%;
+ background-image: url(../images/©Hellofoto_IBNL_5_381_44.jpg);
+  background-size: 550%;
 
-  background-position: 45% 40%;
+  background-position: 60% 100%;
   background-repeat: no-repeat;
-
   height: 100vh;
 
 
@@ -124,4 +122,15 @@ button {
       width: 1rem;
     }
   }
+}
+
+
+
+
+
+
+/* ABOUT GRIFFIN */
+
+.about-container {
+  display: flex;
 }
