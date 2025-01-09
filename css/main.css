@@ -170,6 +170,17 @@ button {
 
 
 
+.my-career-title {
+  margin-right: auto;
+  margin-left: auto  ;
+  text-align: center;
+  width: 10rem;
+
+  border-bottom: 0.5rem solid transparent;
+  border-image: url(../images/linebar.png) 55 round;
+  border-width: 0.24rem;
+}
+
 .career-div {
   position: relative;
   display: flex;
