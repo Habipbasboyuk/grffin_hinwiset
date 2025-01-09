@@ -182,6 +182,10 @@ button {
   border-width: 0.24rem;
 }
 
+.career-container {
+  margin-bottom: 5rem;
+}
+
 .career-div {
   position: relative;
   display: flex;
@@ -206,4 +210,32 @@ button {
   right: -1rem;
   z-index: -1;
   border: 3px solid #d01bb5;
+}
+
+
+.partner-title {
+  font-weight: 400;
+  text-align: center;
+  width: 11rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-bottom: 0.5rem solid transparent;
+  border-image: url(../images/linebar.png) 55 round;
+}
+
+.partner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+.partner-container img {
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.black-logo {
+  background-color: white;
 }
