@@ -9,16 +9,79 @@ body {
   font-family: 'Lalezar';
 }
 
+.overflower {
+  overflow: hidden;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.hamburger-closer img {
+  width: 3rem;
+}
+
+.hamburger-menu {
+  display: none;
+  height: 100vh;
+  background-color: black;
+
+  ul {
+    padding-left: 0;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 3rem;
+      
+      text-decoration: underline 5px solid #D01BB5;
+
+    }
+  }
+
+
+  } 
+
+  
+
+  .flag {
+    filter: opacity(20%);
+    width: 20rem;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 55%;
+    margin: 0 auto;
+  }
+}
+
+.activator {
+  display: block;
+}
+
+.deleter {
+  display: none;
+}
+
 .start-page {
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/©Hellofoto_IBNL_5_381_44.jpg);
+ background-image: url(../images/©Hellofoto_IBNL_5_381_24.jpg);
+ filter: brightness();
+  background-size: 500%;
 
-  background-size: 400%;
-
-  background-position: 65% 180%;
+  background-position: 45% 40%;
   background-repeat: no-repeat;
 
   height: 100vh;
+
+
+
 
   ul {
 
