@@ -131,6 +131,7 @@ button {
 /* ABOUT GRIFFIN */
 
 .about-container {
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
 
@@ -154,6 +155,7 @@ button {
 
 .image-border {
   position: relative;
+  
 }
 
 .image-border::after {
@@ -163,5 +165,32 @@ button {
   left: -0.8rem;
   right: 1.5rem;
   bottom: 1rem;
+  border: 3px solid #d01bb5;
+}
+
+
+
+.career-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  width: 15rem;
+  img {
+    width: 15rem;
+    
+  }
+}
+
+.career-div::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0.5rem;
+  left: 0.5rem;
+  right: -1rem;
+  z-index: -1;
   border: 3px solid #d01bb5;
 }
