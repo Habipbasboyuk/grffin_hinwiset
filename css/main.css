@@ -132,6 +132,7 @@ button {
 
 .about-container {
   margin-top: 1rem;
+  margin-bottom: 5rem;
   display: flex;
   justify-content: space-between;
 
@@ -172,7 +173,7 @@ button {
 
 .my-career-title {
   margin-right: auto;
-  margin-left: auto  ;
+  margin-left: auto;
   text-align: center;
   width: 10rem;
 
@@ -191,6 +192,7 @@ button {
   width: 15rem;
   img {
     width: 15rem;
+    filter: brightness(65%);
     
   }
 }
