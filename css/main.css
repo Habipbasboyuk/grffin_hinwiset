@@ -95,6 +95,7 @@ button {
     padding-top: 50%;
 
     h1 {
+      font-size: 3rem;
       width: 10rem;
       margin-bottom: 0;
       margin-top: 0;
@@ -120,7 +121,7 @@ button {
 .start-page::before {
   content:'';
   position: absolute;
-  background-color: hsla(80, 0%, 20%, .6);
+  filter: brightness(50%);
   top: 0;
   left: 0;
   width: 100%;
