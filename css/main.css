@@ -1,10 +1,29 @@
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 0.3rem;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d01bb5;
+  border-radius: 25px;
+  cursor: grab;
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d01bb5b1;
+  transition: 1s;
+}
+
+
 body {
   background-color: black;
   color: white;
   width: 100%;
   margin: 0;
   padding: 0;
-
+  position: relative;
   font-family: "Lalezar";
 }
 
@@ -134,7 +153,7 @@ button {
 
 .about-container {
   margin-top: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   display: flex;
   justify-content: space-between;
 
@@ -168,6 +187,16 @@ button {
   right: 1.5rem;
   bottom: 1rem;
   border: 3px solid #d01bb5;
+}
+
+/* CAREER */
+
+.racecar {
+  position: absolute;
+  z-index: 10;
+  top: 38%;
+  width: 15rem;
+
 }
 
 .my-career-title {
@@ -386,6 +415,7 @@ button {
   .about-container {
     div {
       margin-left: 1rem;
+      margin-bottom: 5rem;
     }
   }
 }
@@ -403,7 +433,7 @@ button {
     div {
       font-size: 1.3rem;
       line-height: 1;
-      margin-left: 8rem;
+      margin-left: 6rem;
 
       & h2 {
         width: 13.5rem;
@@ -445,6 +475,7 @@ button {
       font-size: 1.5rem;
       line-height: 1;
       margin-left: 8rem;
+      margin-bottom: 18rem;
 
       & h2 {
         width: 16rem;
@@ -475,6 +506,11 @@ button {
 }
 
 @media (min-width: 77rem) {
+
+  .about-container {
+    margin-bottom: 5rem;
+  }
+
   .image-border {
     width: 30rem;
     height: 40rem;
@@ -496,6 +532,10 @@ button {
 }
 
 @media (min-width: 100rem) {
+
+  .about-container {
+    margin-bottom: 35rem;
+  }
 }
 
 @media (min-width: 115rem) {
@@ -523,10 +563,8 @@ button {
 
   .left {
     margin-left: 2rem;
-
-
   }
-      .right {
+  .right {
     margin-right: 2rem;
 
     &::after {
@@ -539,12 +577,6 @@ button {
 
   }
   }
-
-
-
-
-
-
 }
 
 @media (min-width: 67rem) {
@@ -561,10 +593,85 @@ button {
 
 
 }
+}
+
+
+
+@media (min-width: 67rem) {
+  .my-career-title {
+      margin-right: 10rem;
+    }
+    .right {
+  margin-right: 10rem;
+  
+  
+  }
+  }
+
 
 @media (min-width: 100rem) {
 }
 
 @media (min-width: 115rem) {
 }
+
+
+/* MEDIAQ RACECARBACKGROUND */
+
+@media(min-width: 25rem) {
+  .racecar {
+    left: 1rem;
+  
+  }
+}
+
+@media(min-width: 32rem) {
+  .racecar {
+    left: 3rem;
+    width: 17rem;
+    top: 37%;
+  
+  }
+}
+
+@media(min-width: 37rem) {
+  .racecar {
+    left: 6rem;
+  
+  }
+}
+
+@media(min-width: 47rem) {
+  .racecar {
+    left: 6rem;
+  
+  }
+}
+
+@media(min-width: 55rem) {
+  .racecar {
+    left: 6rem;
+    top: 30%;
+    width: 30rem;
+  
+  }
+}
+
+@media(min-width: 77rem) {
+  .racecar {
+    left: 6rem;
+    top: 28%;
+    width: 40rem;
+  
+  }
+}
+
+
+@media(min-width: 100rem) {
+  .racecar {
+    left: 6rem;
+    width: 60rem;
+    top: 28%;
+  
+  }
 }
