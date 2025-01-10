@@ -67,9 +67,11 @@ button {
   position: relative;
 }
 
+/* HOMEPAGINA */
+
 .start-page {
   position: relative;
-  width: 100vw;
+  width: 100%;
   background-image: url(../images/©Hellofoto_IBNL_5_381_44.jpg);
   background-size: 550%;
 
@@ -96,7 +98,7 @@ button {
 
     h1 {
       font-size: 3rem;
-      width: 10rem;
+      width: 14rem;
       margin-bottom: 0;
       margin-top: 0;
       line-height: 1;
@@ -119,14 +121,13 @@ button {
 }
 
 .start-page::before {
-  content:'';
+  content: "";
   position: absolute;
-  filter: brightness(50%);
+  background-color: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  mix-blend-mode: color;
 }
 
 /* ABOUT GRIFFIN */
@@ -141,27 +142,26 @@ button {
     font-weight: 200;
     margin-top: 5rem;
     margin-left: 1rem;
-    width: 11rem;
+    width: 10rem;
 
     border-bottom: 0.5rem solid transparent;
-      border-image: url(../images/linebar.png) 55 round;
-      border-width: 0.24rem;
+    border-image: url(../images/linebar.png) 55 round;
+    border-width: 0.24rem;
   }
 
   img {
     filter: brightness(65%);
-    width: 10rem;
+    width: 9rem;
     margin: 1rem 1rem 0 0;
   }
 }
 
 .image-border {
   position: relative;
-  
 }
 
 .image-border::after {
-  content:'';
+  content: "";
   position: absolute;
   top: 1.5rem;
   left: -0.8rem;
@@ -169,8 +169,6 @@ button {
   bottom: 1rem;
   border: 3px solid #d01bb5;
 }
-
-
 
 .my-career-title {
   margin-right: auto;
@@ -198,12 +196,11 @@ button {
   img {
     width: 15rem;
     filter: brightness(65%);
-    
   }
 }
 
 .career-div::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   top: 0.5rem;
@@ -212,7 +209,6 @@ button {
   z-index: -1;
   border: 3px solid #d01bb5;
 }
-
 
 .partner-title {
   font-weight: 400;
@@ -229,7 +225,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  
 }
 .partner-container img {
   width: 10rem;
@@ -239,4 +234,265 @@ button {
 
 .black-logo {
   background-color: white;
+}
+
+/* QUERYSELECTORS HOMEPAGE STARTPAGINA */
+
+@media (min-width: 25rem) {
+  .start-page {
+    background-position: 60% 80%;
+
+    .title {
+      position: absolute;
+      padding-top: 0;
+      top: 30%;
+      left: 1rem;
+
+      h1 {
+        width: 13rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 32rem) {
+  .start-page {
+    background-position: 60% 65%;
+
+    .title {
+      position: absolute;
+      padding-top: 0;
+      top: 30%;
+      left: 2rem;
+
+      h1 {
+        width: 14rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 47rem) {
+  .start-page {
+    background-position: 60% 60%;
+  }
+
+  .start-page .title {
+    margin-left: 2rem;
+    padding-top: 0;
+    top: 40%;
+    position: absolute;
+
+    h1 {
+      width: 15rem;
+    }
+  }
+}
+
+@media (min-width: 55rem) {
+  .hamburger-opener {
+    display: none;
+  }
+
+  .start-page {
+    background-size: 300%;
+    background-position: 60% 55%;
+
+    .title {
+      top: 45%;
+      margin-left: 6rem;
+
+      h1 {
+        width: 23rem;
+        font-size: 5rem;
+      }
+    }
+
+    ul {
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      justify-content: center;
+      list-style: none;
+
+      li a {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 67rem) {
+  .start-page {
+    background-size: 350%;
+    background-position: 60% 55%;
+
+    .title h1 {
+      font-size: 7rem;
+
+      width: 30rem;
+      border-width: 0.5rem;
+    }
+
+    ul li a {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (min-width: 100rem) {
+  .start-page {
+    background-size: 300%;
+    background-position: 60% 55%;
+
+    .title {
+      top: 45%;
+      left: 6rem;
+
+      h1 {
+        font-size: 7rem;
+
+        width: 30rem;
+        border-width: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 115rem) {
+  .start-page {
+    background-size: 250%;
+    background-position: 60% 55%;
+
+    .title {
+      top: 45%;
+      margin-left: 6rem;
+
+      h1 {
+        font-size: 8rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/* mediaq about */
+
+@media (min-width: 25rem) {
+  .about-container {
+    div {
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media (min-width: 32rem) {
+  .about-container {
+    div {
+      margin-left: 3rem;
+    }
+  }
+}
+
+@media (min-width: 37rem) {
+  .about-container {
+    div {
+      font-size: 1.3rem;
+      line-height: 1;
+      margin-left: 4rem;
+
+      & h2 {
+        width: 13.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 47rem) {
+  .image-border {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 55rem) {
+  .image-border {
+    width: 14rem;
+    height: 19rem;
+
+    img {
+      width: 95%;
+      height: 95%;
+      object-fit: cover;
+    }
+  }
+
+  .about-container {
+    div {
+      font-size: 1.5rem;
+      line-height: 1;
+      margin-left: 8rem;
+
+      & h2 {
+        width: 16rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 67rem) {
+  .image-border {
+    width: 17rem;
+    height: 25rem;
+    margin-right: 10%;
+    img {
+      width: 95%;
+      height: 95%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (min-width: 77rem) {
+  .image-border {
+    width: 30rem;
+    height: 40rem;
+
+    &::after {
+      top: 2rem;
+      left: -1.5rem;
+      right: 2.5rem;
+      bottom: 2rem;
+      border: 5px solid #d01bb5;
+    }
+
+    img {
+      width: 95%;
+      height: 95%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (min-width: 100rem) {
+}
+
+@media (min-width: 115rem) {
+}
+
+/* MEDIAQ CAREER */
+
+@media (min-width: 55rem) {
+}
+
+@media (min-width: 67rem) {
+}
+
+@media (min-width: 100rem) {
+}
+
+@media (min-width: 115rem) {
 }
