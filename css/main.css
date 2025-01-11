@@ -214,6 +214,16 @@ button {
 
 .career-container {
   margin-bottom: 5rem;
+
+
+}
+
+.right-picture {
+  animation: fadeInRight 5s forwards;
+}
+
+.left-picture {
+  animation: fadeInleft 5s forwards;
 }
 
 .career-div {
