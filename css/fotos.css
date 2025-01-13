@@ -70,6 +70,7 @@ body {
   
   .activator {
     display: block;
+    animation: fadeInLeft 0.5s forwards;
   }
   
   .deleter {
