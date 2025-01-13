@@ -168,6 +168,10 @@ body {
   }
 
 
+  .creds  {
+    font-size: 0.8rem;
+  }
+
 
   @media (min-width: 25rem) {
     .start-page {
