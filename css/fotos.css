@@ -1,0 +1,313 @@
+
+body {
+    background-color: black;
+    font-family: "Lalezar";
+}
+
+.grid-container {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   
+    img {
+        width: 10rem;
+        height: 12rem;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+.overflower {
+    overflow: hidden;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .hamburger-closer img {
+    width: 3rem;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    height: 100vh;
+    background-color: black;
+  
+    ul {
+      padding-left: 0;
+      text-align: center;
+      display: grid;
+      justify-content: center;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 3rem;
+  
+          text-decoration: underline 5px solid #d01bb5;
+        }
+      }
+    }
+  
+    .flag {
+      filter: opacity(20%);
+      width: 20rem;
+      display: flex;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 55%;
+      margin: 0 auto;
+    }
+  }
+  
+  .activator {
+    display: block;
+  }
+  
+  .deleter {
+    display: none;
+  }
+  
+  .hamburger-opener {
+    position: relative;
+  }
+
+  .start-page {
+    position: relative;
+    width: 100%;
+    background-size: 550%;
+  
+    background-position: 60% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+  
+    ul {
+      display: none;
+      & li a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  
+    .logo img {
+      width: 3rem;
+    }
+
+  }
+  
+  .start-page::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  footer {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    height: 10rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+  
+    
+    a {
+      color: rgb(79, 78, 78);
+    }
+  
+    img {
+      width: 2rem;
+    
+    }
+  }
+  
+  .tel,
+  .gmail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gmail {
+    margin-bottom: 0;
+  }
+  
+  
+  .socials-container {
+    background-color: white;
+    text-align: center;
+  
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .copyright {
+      color: black;
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+  }
+
+
+
+  @media (min-width: 25rem) {
+    .start-page {
+      background-position: 60% 80%;
+  
+      .title {
+        position: absolute;
+        padding-top: 0;
+        top: 30%;
+        left: 1rem;
+  
+        h1 {
+          width: 13rem;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 32rem) {
+    .start-page {
+      background-position: 60% 65%;
+  
+      .title {
+        position: absolute;
+        padding-top: 0;
+        top: 30%;
+        left: 2rem;
+  
+        h1 {
+          width: 14rem;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 47rem) {
+    .start-page {
+      background-position: 60% 60%;
+    }
+  
+    .start-page .title {
+      margin-left: 2rem;
+      padding-top: 0;
+      top: 40%;
+      position: absolute;
+  
+      h1 {
+        width: 15rem;
+      }
+    }
+  }
+  
+  @media (min-width: 55rem) {
+    .hamburger-opener {
+      display: none;
+    }
+  
+    .start-page {
+      background-size: 300%;
+      background-position: 60% 55%;
+  
+      .title {
+        top: 45%;
+        margin-left: 6rem;
+  
+        h1 {
+          width: 23rem;
+          font-size: 5rem;
+        }
+      }
+  
+      ul {
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+        list-style: none;
+  
+        li a {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 67rem) {
+    .start-page {
+      background-size: 350%;
+      background-position: 60% 55%;
+  
+      .title h1 {
+        font-size: 7rem;
+  
+        width: 30rem;
+        border-width: 0.5rem;
+      }
+  
+      ul li a {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  
+  @media (min-width: 100rem) {
+    .start-page {
+      background-size: 300%;
+      background-position: 60% 55%;
+  
+      .title {
+        top: 45%;
+        left: 6rem;
+  
+        h1 {
+          font-size: 7rem;
+  
+          width: 30rem;
+          border-width: 0.5rem;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 115rem) {
+    .start-page {
+      background-size: 250%;
+      background-position: 60% 55%;
+  
+      .title {
+        top: 45%;
+        margin-left: 6rem;
+  
+        h1 {
+          font-size: 8rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  
