@@ -6,6 +6,9 @@ const $hamburgerCloser = document.getElementById('hamburger-closer');
 const $hamburgerMenu = document.getElementById('hamburger-menu');
 
 
+const $hamburgerContact = document.querySelector(".hamburger-contact");
+const $hamburgerSocials = document.querySelector(".hamburger-socials");
+
 $hamburgerOpener.addEventListener('click', () => {
   $hamburgerMenu.classList.add('activator');
   $hamburgerOpener.classList.add('deleter');
@@ -18,3 +21,15 @@ $hamburgerCloser.addEventListener('click', () => {
   $hamburgerOpener.classList.remove('deleter');
   $body.classList.remove('overflower');
 })
+
+$hamburgerContact.addEventListener("click", () => {
+  $hamburgerMenu.classList.remove('activator');
+  $hamburgerOpener.classList.remove('deleter');
+  $body.classList.remove("overflower");
+});
+
+$hamburgerSocials.addEventListener("click", () => {
+  $hamburgerMenu.classList.remove('activator');
+  $hamburgerOpener.classList.remove('deleter');
+  $body.classList.remove("overflower");
+});

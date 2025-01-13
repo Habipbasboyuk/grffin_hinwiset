@@ -27,9 +27,9 @@
     <button id="hamburger-closer" class="hamburger-closer"><img src="./images/close-outline-svgrepo-com.svg" alt=""></button>
     <ul>
       <li><a href="./index.html">HOME</a></li>
-      <li><a href="#footer-socials">CONTACT</a></li>
+      <li><a class="hamburger-contact" href="#footer-socials">CONTACT</a></li>
       <li><a href="./fotos.html">FOTO'S</a></li>
-      <li><a href="#footer-socials">SOCIALS</a></li>
+      <li><a class="hamburger-socials" href="#footer-socials">SOCIALS</a></li>
     </ul>
 
     <img class="flag" src="./images/SVGRepo_flag.png" alt="">
@@ -108,25 +108,29 @@
   </section>
 
   <footer>
-    <section class="primary-footer">
-      <article class="footer-contact">
-        <p>contact:</p>
-        <a href="tel:+32471967812">Tel: 0471 96 78 12</a>
-        <a href="mailto:griffinhinwiset@gmail.com"> Email: griffinhinwiset@gmail.com</a>
-      </article>
+    <section class="contact-container">
+      <h2>contact</h2>
+      <div class="tel">
+        <img src="./images/call-receive-svgrepo-com.svg" alt="call">
+        <a href="tel:+32471967812">tel: 04 71 96 78 12</a>
+      </div>
 
-      <article id="footer-socials"> 
-        <p>socials:</p>
-        <a href="https://www.instagram.com/_griffinhinwiset_?igsh=MXNwM2dqYjU2dDU2Nw==" target="_blank" ><img class="insta-logo" src="./images/instalogo.svg" alt="instagram"></a>
-        <a href="https://www.youtube.com/@griffinhinwiset" target="_blank"><img class="youtube-logo" src="./images/youtube-svgrepo-com.svg" alt="youtube"></a>
-        <a href="https://www.facebook.com/griffin.hinwiset/" target="_blank"><img class="facebook-logo" src="./images/facebook-svgrepo-com.svg" alt="facebook"></a>
-      </article>
-
+      <div class="gmail">
+        <img src="./images/gmail-svgrepo-com.svg" alt=""> 
+         <a href="mailto:griffinhinwiset@gmail.com" alt="gmail"> griffinhinwiset@gmail.com</a>
+      </div>
     </section>
 
-    <section class="secundary-footer">
-      <p>© 2025 Griffin Hinwiset.</p>
-      <p class="creds">realised by Habip Basboyuk</p>
+    <section class="socials-container">
+      <h2>Follow me</h2>
+
+      <ul>
+        <li><a href=""><img src="./images/instalogo.svg" alt="insta"></a></li>
+        <li><a href=""><img src="./images/youtube-svgrepo-com.svg" alt="youtube"></a></li>
+        <li><a href=""><img src="./images/facebook-svgrepo-com.svg" alt="facebook"></a></li>
+      </ul>
+
+      <p class="copyright">&copy;2025 Griffin Hinwiset. All right reserved.</p>
     </section>
   </footer>
   <script src="./js/index.js"></script>

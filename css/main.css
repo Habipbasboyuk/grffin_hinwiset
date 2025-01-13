@@ -218,14 +218,6 @@ button {
 
 }
 
-.right-picture {
-  animation: fadeInRight 5s forwards;
-}
-
-.left-picture {
-  animation: fadeInleft 5s forwards;
-}
-
 .career-div {
   position: relative;
   display: flex;
@@ -282,59 +274,59 @@ button {
 /* FOOTER */
 
 
-
-
-.primary-footer {
-  border-top: 5px solid #e80fc72b;
+footer {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  height: 10rem;
+  color: black;
   display: flex;
-  justify-content: space-between;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  flex-direction: column;
+  text-align: center;
 
-  .footer-contact a {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-size: 0.8rem;
+  
+  a {
+    color: rgb(79, 78, 78);
+  }
+
+  img {
+    width: 2rem;
+  
   }
 }
 
-#footer-socials {
-  text-align: right;
+.tel,
+.gmail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
 }
 
-.insta-logo,
-.youtube-logo,
-.facebook-logo {
-  width: 2rem;
-  height: 1.8rem;
-  object-fit: cover;
-  margin-left: 0.3rem;
-  margin-right: 0.3rem;
-
+.gmail {
+  margin-bottom: 0;
 }
 
-.secundary-footer {
-  background-color: #e80fc72b;
-  position: relative;
-p {
-   margin-bottom: 0;
-   padding: 1rem 0;
-   display: flex;
-   justify-content: center;
- }
 
- .creds {
-  position: absolute;
-  color: #bdabba47;
-  font-size: 0.6rem;
-  bottom: 0;
-  right: 0.3rem;
-  padding: 0;
-  margin: 0;
- }
+.socials-container {
+  background-color: white;
+  text-align: center;
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .copyright {
+    color: black;
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
 }
-
 
 
 
