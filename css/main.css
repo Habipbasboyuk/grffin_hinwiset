@@ -201,7 +201,7 @@ button {
 .racecar {
   position: absolute;
   z-index: 10;
-  top: 38%;
+  top: 32%;
   width: 15rem;
 
 }
@@ -723,7 +723,7 @@ footer {
   .racecar {
     left: 3rem;
     width: 17rem;
-    top: 37%;
+    top: 33%;
   
   }
 }
@@ -745,7 +745,7 @@ footer {
 @media(min-width: 55rem) {
   .racecar {
     left: 6rem;
-    top: 30%;
+    top: 31%;
     width: 30rem;
   
   }
@@ -754,7 +754,7 @@ footer {
 @media(min-width: 77rem) {
   .racecar {
     left: 6rem;
-    top: 28%;
+    top: 30%;
     width: 40rem;
   
   }
@@ -765,7 +765,7 @@ footer {
   .racecar {
     left: 6rem;
     width: 60rem;
-    top: 28%;
+    top: 29%;
   
   }
 }
