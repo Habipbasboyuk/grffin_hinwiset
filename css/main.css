@@ -87,6 +87,7 @@ button {
 
 .hamburger-opener {
   position: relative;
+  animation: fadeInDown 1s ease forwards;
 }
 
 /* HOMEPAGINA */

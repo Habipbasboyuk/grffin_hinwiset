@@ -79,6 +79,7 @@ body {
   
   .hamburger-opener {
     position: relative;
+    animation: fadeInDown 1s ease forwards;
   }
 
   .start-page {
