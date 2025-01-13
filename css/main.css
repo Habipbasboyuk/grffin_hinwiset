@@ -91,6 +91,7 @@ button {
 /* HOMEPAGINA */
 
 .start-page {
+  
   position: relative;
   width: 100%;
   background-image: url(../images/©Hellofoto_IBNL_5_381_44.jpg);
@@ -101,6 +102,7 @@ button {
   height: 100vh;
 
   ul {
+    animation: fadeInDown 1s ease forwards;
     display: none;
     & li a {
       color: white;
@@ -118,6 +120,7 @@ button {
     padding-top: 50%;
 
     h1 {
+      animation: fadeInLeft 0.8s ease forwards;
       font-size: 3rem;
       width: 14rem;
       margin-bottom: 0;
