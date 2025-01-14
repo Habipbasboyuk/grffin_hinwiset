@@ -33,14 +33,12 @@ $hamburgerSocials.addEventListener("click", () => {
 
 const $photos = document.querySelectorAll(".grid-container img");
 const $loadedFotos = document.querySelector("#loaded-fotos");
-let lastScrollPosition = 0;
 
 for (const $photo of $photos) {
   let content = "";
 
   console.log($photo);
 
-  lastScrollPosition = window.scrollY;
   $photo.addEventListener("click", () => {
 
     content = `
@@ -57,5 +55,5 @@ for (const $photo of $photos) {
 
 $loadedFotos.addEventListener('click', () => {
   $loadedFotos.classList.remove("opener");
-  window.scrollTo({ top: lastScrollPosition});
+  
 })
