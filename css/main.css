@@ -14,8 +14,12 @@
   background-color: #d01bb5b1;
 }
 
+
+
+
 html {
   scroll-behavior: smooth;
+  touch-action: none;
 }
 
 
@@ -26,6 +30,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  touch-action: none;
   
 }
 
@@ -96,7 +101,6 @@ button {
 /* HOMEPAGINA */
 
 .start-page {
-  
   position: relative;
   width: 100%;
   background-image: url(../images/©Hellofoto_IBNL_5_381_44.jpg);
@@ -302,6 +306,7 @@ button {
 
 
 footer {
+  position: relative;
   background-color: white;
   width: 90%;
   margin: 0 auto;
@@ -325,6 +330,19 @@ footer {
     width: 2rem;
   
   }
+
+  .returner {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    background-color: #d01bb5;
+    border-radius: 50%;
+    right: -5%;
+    bottom: -120%;
+    img {
+      padding: 0.5rem
+    }
+  }
 }
 
 .tel,
@@ -342,6 +360,7 @@ footer {
 
 
 .socials-container {
+  position: relative;
   padding-top: 1rem;
   background-color: white;
   text-align: center;
@@ -641,6 +660,7 @@ footer {
       object-fit: cover;
     }
   }
+}
 }
 
 @media (min-width: 77rem) {

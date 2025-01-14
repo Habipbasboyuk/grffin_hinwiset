@@ -56,4 +56,6 @@ for (const $photo of $photos) {
 $loadedFotos.addEventListener('click', () => {
   $loadedFotos.classList.remove("opener");
   
-})
+});
+
+
