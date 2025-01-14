@@ -26,8 +26,10 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: "Lalezar";
+  
 }
+
+
 
 .overflower {
   overflow: hidden;
@@ -55,6 +57,7 @@ button {
     li {
       list-style: none;
       a {
+        font-family: "Lalezar";
         text-decoration: none;
         color: white;
         font-size: 3rem;
@@ -107,6 +110,7 @@ button {
     animation: fadeInDown 1s ease forwards;
     display: none;
     & li a {
+      font-family: "Lalezar";
       color: white;
       text-decoration: none;
     }
@@ -122,6 +126,7 @@ button {
     padding-top: 50%;
 
     h1 {
+      font-family: "Lalezar";
       animation: fadeInLeft 0.8s ease forwards;
       font-size: 3rem;
       width: 14rem;
@@ -139,6 +144,11 @@ button {
       display: flex;
       align-items: center;
       gap: 0.5rem;
+
+    }
+    p {
+      font-family: "ABeeZee";
+      font-size: 0.8rem;
     }
     img {
       width: 1rem;
@@ -165,14 +175,23 @@ button {
   justify-content: space-between;
 
   h2 {
+    font-family: "Lalezar";
     font-weight: 200;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-left: 1rem;
     width: 10rem;
 
     border-bottom: 0.5rem solid transparent;
     border-image: url(../images/linebar.png) 55 round;
     border-width: 0.24rem;
+  }
+
+  p {
+    font-family: "ABeeZee";
+    font-size: 0.6rem;
+    width: 75%;
+    line-height: 1rem;
+    padding-left: 1rem;
   }
 
   img {
@@ -201,13 +220,15 @@ button {
 .racecar {
   position: absolute;
   z-index: 10;
-  top: 32%;
+  top: 36%;
   width: 15rem;
 
 }
 
 .my-career-title {
   margin-right: auto;
+  font-family: "Lalezar";
+  font-weight: 400;
   margin-left: auto;
   text-align: center;
   width: 10rem;
@@ -249,6 +270,7 @@ button {
 }
 
 .partner-title {
+  font-family: "Lalezar";
   font-weight: 400;
   text-align: center;
   width: 11rem;
