@@ -311,8 +311,13 @@ footer {
   flex-direction: column;
   text-align: center;
 
+  h2 {
+    font-family: "Lalezar";
+    font-weight: 400;
+  }
   
   a {
+    font-family: "ABeeZee";
     color: rgb(79, 78, 78);
   }
 
@@ -337,6 +342,7 @@ footer {
 
 
 .socials-container {
+  padding-top: 1rem;
   background-color: white;
   text-align: center;
 
@@ -352,10 +358,12 @@ footer {
     color: black;
     font-size: 0.8rem;
     opacity: 0.8;
+    font-family: "ABeeZee";
   }
 }
 
 .creds  {
+  font-family: "ABeeZee";
   font-size: 0.8rem;
 }
 
@@ -378,6 +386,10 @@ footer {
       h1 {
         width: 13rem;
       }
+
+      p {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -391,10 +403,12 @@ footer {
       padding-top: 0;
       top: 30%;
       left: 2rem;
-
       h1 {
         width: 14rem;
       }
+      
+
+
     }
   }
 }
@@ -458,6 +472,12 @@ footer {
     background-size: 350%;
     background-position: 60% 55%;
 
+    .title p {
+
+        font-size: 1.4rem;
+
+    }
+
     .title h1 {
       font-size: 7rem;
 
@@ -514,6 +534,11 @@ footer {
     div {
       margin-left: 1rem;
       margin-bottom: 5rem;
+
+      p {
+        font-size: 0.8rem;
+        width: 90%;
+      }
     }
   }
 }
@@ -536,6 +561,11 @@ footer {
       & h2 {
         width: 13.5rem;
       }
+
+      p {
+        font-size: 0.8rem;
+        width: 95%;
+      }
     }
   }
 }
@@ -548,7 +578,7 @@ footer {
 
 @media (min-width: 55rem) {
   .image-border {
-    width: 14rem;
+    width: 50rem;
     height: 19rem;
 
     &::after {
@@ -578,13 +608,23 @@ footer {
       & h2 {
         width: 16rem;
       }
+
+      p {
+        font-size: 0.8rem;
+        width: 70%;
+      }
     }
   }
 }
 
 @media (min-width: 67rem) {
+  .about-container {
+    div p {
+      font-size:1.1rem;
+      line-height: 1.5rem;
+    }
   .image-border {
-    width: 17rem;
+    width: 60rem;
     height: 25rem;
     margin-right: 10%;
 
@@ -605,8 +645,20 @@ footer {
 
 @media (min-width: 77rem) {
 
+
+
   .about-container {
     margin-bottom: 5rem;
+    div p {
+      font-size:1.1rem;
+      line-height: 1.5rem;
+    }
+    .image-border {
+      width: 70rem;
+      height: 30rem;
+
+   
+    }
   }
 
   .image-border {
@@ -633,7 +685,21 @@ footer {
 
   .about-container {
     margin-bottom: 35rem;
+
+    .image-border {
+      width: 70rem;
+      height: 40rem;
+
+   
+    }
+    .image-border::after {
+      bottom: 2rem;
+      right: 3rem;
+      left: -3rem;
+    }
   }
+
+
 }
 
 @media (min-width: 115rem) {
