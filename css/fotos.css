@@ -1,6 +1,7 @@
 body {
   background-color: black;
   font-family: "Lalezar";
+  position: relative;
 }
 
 .grid-container {
@@ -97,6 +98,30 @@ button {
   }
 
 
+}
+
+.loaded-photos {
+    display: none;
+    width: 99%;
+    position: relative;
+    position: absolute;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+    img {
+        position: absolute;
+        width: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40%;
+        
+    }
+
+}
+
+.opener {
+    display: block;
 }
 
 .grid-container img {
@@ -313,6 +338,10 @@ footer {
 
 
 
+    }
+
+    img {
+        
     }
 
 
