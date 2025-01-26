@@ -37,9 +37,9 @@ const $loadedFotos = document.querySelector("#loaded-fotos");
 for (const $photo of $photos) {
   let content = "";
 
-  console.log($photo);
-
   $photo.addEventListener("click", () => {
+
+    $body.classList.add('overflower')
 
     content = `
     <img src=${$photo.src} alt="clickedFoto">
@@ -55,6 +55,7 @@ for (const $photo of $photos) {
 
 $loadedFotos.addEventListener('click', () => {
   $loadedFotos.classList.remove("opener");
+  $body.classList.remove('overflower')
   
 });
 

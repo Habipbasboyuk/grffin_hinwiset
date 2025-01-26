@@ -224,7 +224,7 @@ button {
 .racecar {
   position: absolute;
   z-index: 10;
-  top: 36%;
+  top: 30%;
   width: 15rem;
 
 }
@@ -240,6 +240,15 @@ button {
   border-bottom: 0.5rem solid transparent;
   border-image: url(../images/linebar.png) 55 round;
   border-width: 0.24rem;
+}
+
+.career-intro {
+  font-family: "ABeeZee";
+  font-weight: 300;
+  width: 20rem;
+ line-height: 1.5rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
 }
 
 .career-container {
@@ -622,7 +631,7 @@ footer {
       font-size: 1.5rem;
       line-height: 1;
       margin-left: 8rem;
-      margin-bottom: 18rem;
+      margin-bottom: 6rem;
 
       & h2 {
         width: 16rem;
@@ -704,7 +713,7 @@ footer {
 @media (min-width: 100rem) {
 
   .about-container {
-    margin-bottom: 35rem;
+    margin-bottom: 20rem;
 
     .image-border {
       width: 70rem;
@@ -729,14 +738,27 @@ footer {
 
 @media (min-width: 55rem) {
 
-  .my-career-title {
-    margin-right: 2rem;
-    text-align: right;
+  .career-text-container-right {
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
+    position: relative;
+
+    p {
+      margin-top: 0;
+      margin-left: 3rem;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .career-intro {
+    width: 25rem;
   }
 
   .career-div {
     margin-bottom: 10rem;
-    width: 20rem;
+    width: 30rem;
 
 
 
@@ -745,64 +767,39 @@ footer {
     }
   }
 
-  .left {
-    margin-left: 2rem;
-  }
-  .right {
-    margin-right: 2rem;
-
-    &::after {
-
-      top: -1rem;
-      left: -1rem;
-      bottom: 1rem;
-      right: 1rem;
-
-
-  }
-  }
 }
 
 @media (min-width: 67rem) {
+
   .my-career-title {
-    margin-right: 8rem;
-  }
-  .left {
-    margin-left: 8rem;
-
-
-  }
-      .right {
-    margin-right: 8rem;
-
-
-}
-}
-
-
-
-@media (min-width: 67rem) {
-  .my-career-title {
-      margin-right: 10rem;
-    }
-    .right {
-  margin-right: 10rem;
-  width: 30rem;
-  
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    width: 12rem;
   }
 
-  .left {
+  .career-intro {
     width: 30rem;
-    margin-left: 10rem;
   }
-  }
+
+}
+
+
 
 
 @media (min-width: 100rem) {
+
+  .career-text-container-left {
+    p {
+      margin-right: 10rem;
+    }
+  }
+
+  .my-career-title {
+   font-size: 2.5rem;
+   width: 15rem;
+  }
 }
 
-@media (min-width: 115rem) {
-}
 
 
 
@@ -831,7 +828,7 @@ footer {
   .racecar {
     left: 3rem;
     width: 17rem;
-    top: 33%;
+    top: 30%;
   
   }
 }
@@ -846,6 +843,8 @@ footer {
 @media(min-width: 47rem) {
   .racecar {
     left: 6rem;
+    width: 20rem;
+    top: 28%;
   
   }
 }
@@ -853,17 +852,18 @@ footer {
 @media(min-width: 55rem) {
   .racecar {
     left: 6rem;
-    top: 31%;
+    top: 23%;
     width: 30rem;
   
   }
 }
 
+
 @media(min-width: 77rem) {
   .racecar {
     left: 6rem;
-    top: 30%;
-    width: 40rem;
+    top: 24%;
+    width: 35rem;
   
   }
 }
@@ -872,8 +872,8 @@ footer {
 @media(min-width: 100rem) {
   .racecar {
     left: 6rem;
-    width: 60rem;
-    top: 29%;
+    width: 45rem;
+    top: 22%;
   
   }
 }
