@@ -19,7 +19,6 @@
 
 html {
   scroll-behavior: smooth;
-  touch-action: none;
 }
 
 
@@ -30,7 +29,6 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  touch-action: none;
   
 }
 
